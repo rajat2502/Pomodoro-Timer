@@ -1,0 +1,127 @@
+body{
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right bottom, #c0275b , #be0c1f );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body > div{
+  width: 30vw;
+  padding-bottom: 30px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  color: #ac2f4d;
+}
+
+body h1{
+  font-family: 'Pacifico', cursive;
+}
+
+.btn{
+  font-size: 1.6rem;
+  background-color: transparent;
+  margin-right: 20px;
+  border: none;
+  color: #ac2f4d;
+  border: 2px solid #c0275b;
+  border-radius: 4px;
+  font-family: 'Berkshire Swash', cursive;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#min-zero, #sec-zero{
+  display: none;
+}
+
+.btn:hover{
+  color: #f7f7f7;
+  background-color: #ac2f4d !important;
+}
+
+.inc-dec{
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 2.5rem;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #c0275b;
+}
+
+.inc-dec:focus{
+  outline: none;
+  background: transparent;
+}
+
+#timer{
+  margin: 30px auto;
+  height: 25vh;
+  width: 25vh;
+  border: 6px solid #c0275b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+#timer > h1{
+  color: #ce234b;
+  margin: 0;
+  font-size: 2.5rem !important;
+  font-family: sans-serif !important;
+}
+
+#timer > h2{
+  margin: 0;
+}
+
+/* #inc, #dec{
+  margin: 0 10px;
+  cursor: pointer;
+  color: #c0275b;
+} */
+
+@media screen and (max-width: 1000px){
+  body > div{
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 800px){
+  body > div{
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 700px){
+  body > div{
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 550px){
+  body > div{
+    width: 85vw;
+  }
+
+  h1{
+    font-size: 1.6rem !important;
+  }
+
+  .btn{
+    font-size: 1.3rem;
+  }
+
+  /* #timer > h1{
+    font-size: 2.6rem !important;
+  } */
+}
