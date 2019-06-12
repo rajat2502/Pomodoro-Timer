@@ -63,8 +63,8 @@ body h1{
 
 #timer{
   margin: 30px auto;
-  height: 30vh;
-  width: 30vh;
+  height: 26vh;
+  width: 26vh;
   border: 6px solid #c0275b;
   display: flex;
   justify-content: center;
@@ -121,7 +121,8 @@ body h1{
     font-size: 1.3rem;
   }
 
-  /* #timer > h1{
-    font-size: 2.6rem !important;
-  } */
+  #timer{
+    width: 30vh;
+    height: 30vh;
+  } 
 }
