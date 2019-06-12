@@ -5,7 +5,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  max-height: 100vh !important;
   text-align: center;
 }
 
@@ -63,8 +63,8 @@ body h1{
 
 #timer{
   margin: 30px auto;
-  height: 25vh;
-  width: 25vh;
+  height: 30vh;
+  width: 30vh;
   border: 6px solid #c0275b;
   display: flex;
   justify-content: center;
