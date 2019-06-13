@@ -24,6 +24,7 @@ else{
   document.getElementById('sec-zero').style.display = "none";
 }
 
+//event listeners
 work.addEventListener('click', titleToWork);
 bre.addEventListener('click' , titleToBreak);
 reset.addEventListener('click', resetData);
@@ -31,16 +32,19 @@ inc.addEventListener('click', incTimeLimit);
 dec.addEventListener('click', decTimeLimit);
 start.addEventListener('click', startTimer);
 
+//change title to Work
 function titleToWork(){
   title.innerText = 'WORK';
   updateTimeLimit();
 }
 
+//change title to Break
 function titleToBreak(){
   title.innerText = 'BREAK';
   updateTimeLimit();
 }
 
+//update the timit limit to standard time limits
 function updateTimeLimit(){
   if(title.innerText == 'WORK'){
     min.innerText = 25;
@@ -68,6 +72,7 @@ function updateTimeLimit(){
   }
 }
 
+//increase time limit
 function incTimeLimit(){
   if(minutes == 99){
     minutes = 1;
@@ -91,6 +96,7 @@ function incTimeLimit(){
   }
 }
 
+//decrease time limit
 function decTimeLimit(){
   if(minutes == 1){
     minutes = 99;
@@ -114,6 +120,7 @@ function decTimeLimit(){
   }
 }
 
+//start the timer and disable all other buttons except for the reset ones
 function startTimer(){
   var i = 0;
   work.disabled = true;
@@ -124,6 +131,7 @@ function startTimer(){
   document.getElementById('tick').setAttribute('src', 'audio/Tick.mp3');
   document.getElementById("tick").playbackRate = .36;
 
+  //to call this function every second
   interval = setInterval(function(){
     if(i == 0){
       seconds = 59;
@@ -153,6 +161,7 @@ function startTimer(){
   },1000)
 }
 
+//to check for the correct working of timer when time is up
 function checkTimer(){
   if(minutes == 0 && seconds == 0){
     sec.innerText = seconds;
@@ -162,6 +171,7 @@ function checkTimer(){
   }
 }
 
+//reset everything to standard ones
 function resetData(){
   title.innerText = 'WORK';
   document.getElementById('tick').setAttribute('src', '');
