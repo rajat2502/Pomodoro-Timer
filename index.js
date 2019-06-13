@@ -166,6 +166,7 @@ function checkTimer(){
   if(minutes == 0 && seconds == 0){
     sec.innerText = seconds;
     min.innerText = minutes;
+    title.innerText = 'TIME UP';
     clearInterval(interval);
     document.getElementById('tick').setAttribute('src', 'audio/Loud-alarm-clock-sound.mp3');
   }

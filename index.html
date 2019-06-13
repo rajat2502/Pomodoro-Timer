@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pomodoro Timer</title>
+  <title>Pomodoro-Timer</title>
   <link href="https://fonts.googleapis.com/css?family=Cookie|Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
   <link rel="icon" href="https://apprecs.org/gp/images/app-icons/300/d2/com.tatkovlab.pomodoro.jpg"> 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div>
     <h1>POMODORO TIMER</h1>
     <button id="work" class="btn">WORK</button>
     <button id="break" class="btn">BREAK</button>
+
+    <!-- TIMER DIV -->
     <div id="timer">
       <h2 id="title">WORK</h2>
       <h1><button class="inc-dec" id="inc"><span>+</span></button><span id="min-zero">0</span><span id="min">25</span>:<span id="sec-zero">0</span><span id="sec">0</span><button class="inc-dec" id="dec"><span>-</span></button></h1>
@@ -23,6 +26,7 @@
     <button id="reset" class="btn">RESET</button>
   </div>
 
+  <!-- AUDIO FILE -->
   <audio src="" preload="auto" autoplay="true" loop="true" id="tick"></audio>
 
   <script src="index.js"></script>

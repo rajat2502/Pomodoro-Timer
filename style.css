@@ -9,8 +9,6 @@ body{
   text-align: center;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
-
 body > div{
   width: 30vw;
   padding-bottom: 30px;
@@ -84,12 +82,8 @@ body h1{
   margin: 0;
 }
 
-/* #inc, #dec{
-  margin: 0 10px;
-  cursor: pointer;
-  color: #c0275b;
-} */
 
+/* media queries */
 @media screen and (max-width: 1000px){
   body > div{
     width: 50vw;
