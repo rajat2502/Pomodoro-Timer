@@ -63,8 +63,8 @@ body h1{
 
 #timer{
   margin: 30px auto;
-  height: 26vh;
-  width: 26vh;
+  height: 200px;
+  width: 200px;
   border: 6px solid #c0275b;
   display: flex;
   justify-content: center;
