@@ -19,7 +19,7 @@ body > div{
 }
 
 body h1{
-  font-family: 'Pacifico', cursive;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .btn{
@@ -30,7 +30,7 @@ body h1{
   color: #ac2f4d;
   border: 2px solid #c0275b;
   border-radius: 4px;
-  font-family: 'Berkshire Swash', cursive;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   cursor: pointer;
   transition: all 0.5s;
 }
