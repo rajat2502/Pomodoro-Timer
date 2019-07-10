@@ -187,11 +187,10 @@ function resetData(){
 
 
 // pwa app js
-window.onload = () => {
-  'use strict';
 
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('./sw.js');
-  }
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/serviceWorker.js', {
+    scope: '/'
+  });
 }
+
