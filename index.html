@@ -21,7 +21,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <!-- pwa links -->
-  <link rel='manifest' href='/manifest.json'>
+  <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#c0275b" />
 </head>
 <body>
@@ -44,7 +44,6 @@
   <audio src="" preload="auto" autoplay="true" loop="true" id="tick"></audio>
 
   <script>
-  // CODELAB: Register service worker.
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('/sw.js')
@@ -54,6 +53,8 @@
     });
   }
   </script>
+
   <script src="js/app.js"></script>
+  <script src="/js/install.js"></script>
 </body>
 </html>
