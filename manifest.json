@@ -1,7 +1,7 @@
 
 {
   "name": "Pomodoro-Timer",
-  "short_name": "Pomodoro-Timer",
+  "short_name": "Pomodoro",
   "icons": [{
     "src": "images/hello-icon-128.png",
       "sizes": "128x128",
